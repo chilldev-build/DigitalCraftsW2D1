@@ -43,16 +43,14 @@
 
 total_bill = float(input("What is the bill total? "))
 service_level = input("Was the service good, fair or bad? ")
+tip_amount = "%.2f" % (tip_rate * total_bill)
 
-
+def tip_rate(x):
 if service_level.lower() == 'good':
-    print('Tip Amount = ' + str(float(.2 * total_bill)))
-    print('Total Amount = ' + str(float(.2 * total_bill) + total_bill))
+    return Tip_Amount = "%.2f" % (.20)
 elif service_level.lower() == 'fair':
-    print('Tip Amount = ' + str(float(.15 * total_bill)))
-    print('Total Amount = ' + str(float(.15 * total_bill) + total_bill))
+    return Tip_Amount = "%.2f" % (.15 * total_bill)
 elif service_level.lower() == 'bad':
-    print('Tip Amount = ' + str(float(.1 * total_bill)))
-    print('Total Amount = ' + str(float(.1 * total_bill) + total_bill))
+    return Tip_Amount = "%.2f" % (.10 * total_bill)
 
 
