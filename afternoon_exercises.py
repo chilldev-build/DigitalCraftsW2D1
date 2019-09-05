@@ -56,18 +56,43 @@
 #
 #test_list.remove(test_list[0])
 
+##Uppercase all characters
 #test='here is my test string'
 #print(test)
 #print(test.upper())
+
+##Capitalize first character
+
+#Capitalize Method
 #print(test.capitalize())
+
+#Upper first character concat
+#text = input("Give me a string, please: ")
+#print(text[0].upper() + text[1:])
+
+##Reverse Characters using method
+
+#test = input('Give me a phrase to reverse: ')
 #reversed=''.join(reversed(test))
 #print(reversed)
-#
-#index = (len(test) - 1)
-#print(index)
-#while index > -1:
-#    print(test[index]) 
-#    index = index - 1
+
+##Join List to string with given seperator
+#testlist = ('Test1','Test2','Test3')
+#test = '-'.join(testlist)
+#print(test)
+
+orginal = 'here i am'
+new_text = ''
+
+#Reverse using while loop
+
+length = len(orginal) - 1
+index = 0
+while index < (length + 1):
+    print(length - 1) 
+    new_text = new_text + orginal[length - index]
+    index += 1
+print(new_text)
 
 #str = 'Python'
 #reversed=''.join(reversed(str))
@@ -154,7 +179,7 @@
 # S => 5
 # T => 7
 
-str = 'This is my absolute test string to see if my Leet cipher is working'
+#str = 'This is my absolute test string to see if my Leet cipher is working'
 #original_character = ['A','a','E','e','G','g','I','i','O','o','S','s','T','t']
 #new_character = ['4','4','3','3','6','6','1','1','0','0','5','5','7','7']
 #
@@ -166,7 +191,7 @@ str = 'This is my absolute test string to see if my Leet cipher is working'
 #    print(str[index])
 #    index = index + 1
 
-str = 'This is my absolute test string to see if my Leet cipher is working'
+#str = 'This is my absolute test string to see if my Leet cipher is working'
 #original_character = ['A','a','E','e','G','g','I','i','O','o','S','s','T','t']
 #new_character = ['4','4','3','3','6','6','1','1','0','0','5','5','7','7']
 #
@@ -191,13 +216,78 @@ str = 'This is my absolute test string to see if my Leet cipher is working'
 #  print(str1)
 # my_function_a(str)
 
+#Take these characters and look to see if they exist in the list and replace with the second list
+
+#text = 'This is my absolute test string to see if my Leet cipher is working'
+#text = 'hello world'
+#original_character = ['A','a','E','e','G','g','I','i','O','o','S','s','T','t']
+#new_character = ['4','4','3','3','6','6','1','1','0','0','5','5','7','7']
+
+#text = input("Please enter a phrase: ")
+#original_character = ['A','a','E','e','G','g','I','i','O','o','S','s','T','t']
+#new_character = [4,4,3,3,6,6,1,1,0,0,5,5,7,7]
+#translation = ""
+#uppercased_text = text.upper()
+#
+#index = 0
+#while index < len(text):
+#    #print(text[index])
+#    
+#    index_inner_loop = 0
+#    letter_to_add_to_translation = ""
+#    while index_inner_loop < len(original_character):
+#        #print(new_character[index_inner_loop])
+#        if text[index] == original_character[index_inner_loop]:
+#            #print("We have a match!")
+#            #print(new_character[index_inner_loop])
+#            letter_to_add_to_translation = str(new_character[index_inner_loop])
+#            break
+#        else:
+#            #print("No matches! sad face emoji")
+#            letter_to_add_to_translation = text[index]
+#        index_inner_loop += 1
+#    index += 1
+#    translation = translation + letter_to_add_to_translation
+#
+#print(translation)
+
+##long-long vowels
+
+#text = input("Please enter a word with loong vowel: ")
+#original_character = ['AA','aa','EE','ee','II','ii','OO','oo','UU','uu','YY','yy']
+#new_character = [4,4,3,3,6,6,1,1,0,0,5,5,7,7]
+#translation = ""
+#uppercased_text = text.upper()
+#
+#index = 0
+#while index < len(text):
+#    #print(text[index])
+#    
+#    index_inner_loop = 0
+#    letter_to_add_to_translation = ""
+#    while index_inner_loop < len(original_character):
+#        #print(new_character[index_inner_loop])
+#        if text[index] == original_character[index_inner_loop]:
+#            #print("We have a match!")
+#            #print(new_character[index_inner_loop])
+#            letter_to_add_to_translation = str(new_character[index_inner_loop])
+#            break
+#        else:
+#            #print("No matches! sad face emoji")
+#            letter_to_add_to_translation = text[index]
+#        index_inner_loop += 1
+#    index += 1
+#    translation = translation + letter_to_add_to_translation
+#
+#print(translation)
+
 ## List Exercises
 
-list_to_sum = ['4','4','3','3','6','6','1','1','0','0','5','5','7','7']
-
-index = 0
-sum = 0
-
-while index < len(list_to_sum):
-    sum =+ list_to_sum([index])
+#list_to_sum = ['4','4','3','3','6','6','1','1','0','0','5','5','7','7']
+#
+#index = 0
+#sum = 0
+#
+#while index < len(list_to_sum):
+#    sum =+ list_to_sum([index])
     
